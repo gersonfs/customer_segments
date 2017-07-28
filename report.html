@@ -12097,9 +12097,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Resposta:</strong></p>
-<p>O primeiro cliente, de índice 95 parece com um pequeno mercado de bairro ou merceria, que tem pouco fluxo. Pois suas principais vendas são de "Grocery" e derivados de leite.
-O segundo cliente, de índice 220, parece ser uma feira ou mercado com fruteira, pois vende na sua maioria produtos frescos ou congelados.
-O terceiro cliente já parece mais com um varejista pela quantidade de vendas de produtos frescos e congelados.</p>
+<p>O primeiro cliente, de índice 95 parece com um pequeno mercado de bairro ou merceria, que tem pouco fluxo. Pois suas principais vendas são de "Grocery" e derivados de leite. Se comparar com a média de todo o conjunto de dados, podemos ver que suas vendas são pequenas, pois cada uma das suas seis categorias possui vendas abaixo da média.</p>
+<p>O segundo cliente, de índice 220, parece ser uma feira ou mercado com fruteira, pois vende na sua maioria produtos frescos ou congelados. Comparando com a média de todo o conjunto de dados, podemos ver que a venda de produtos Frescos é maior que a média dos demais estabelecimentos.</p>
+<p>O terceiro cliente, índice 325, já parece mais com um varejista pela quantidade de vendas de produtos frescos e congelados. Comparando com a média de todo o conjunto de dados, podemos observar que a venda de produtos frescos, leite, <em>Grocery</em>, produtos congelados, e <em>Delicatessen</em> estão acima da média. O que reforça a ideia dele ser um varejista.</p>
 
 </div>
 </div>
@@ -13673,8 +13673,8 @@ Grocery e Detergents_Paper
 Grocery e Milk
 Milk e Grocery
 Detergents_Paper e Grocery</p>
-<p>Isso confirma que Grocery pode ser previsto com base em algum outro atributo. 
-Os dados desses atributos são distribuídos de forma diagonal entre os eixos X e Y, num angulo de aproximadamente 45 graus.</p>
+<p>Isso confirma que <em>Grocery</em> pode ser previsto com base em algum outro atributo.</p>
+<p>Os dados desses atributos são distribuídos na diagonal da matriz de dispersão, confirmando que eles possuem relação entre si, ou seja, os dados dessas características são todos positivamente distorcidos (com caudas longas no lado direito).</p>
 
 </div>
 </div>
@@ -18342,14 +18342,18 @@ QmCC
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Resposta:</strong></p>
 <ul>
-<li>A variância total do primeiro e segundo componente é de: 0.7068</li>
+<li><p>A variância total do primeiro e segundo componente é de: 0.7068</p>
+</li>
 <li><p>A variância total dos quatro primeiros é de: 0.9311</p>
 </li>
 <li><p>Na dimensão 1, podemos ver destacados os pesos-positivos em produtos frescos e congelados, e pesos-negativos em detergente e papéis é acompanhado de pesos-negativos de itens de mercearia e derivados de leite.</p>
 </li>
-<li>Na dimensão 2 podemos ver uma co-relação de pesos-negativos com itens frescos, congelados e petiscos (delicatessen)</li>
-<li>Na dimensão 3 podemos ver destacados os pesos positivos de petiscos (delicatessen) e congelados.</li>
-<li>Na dimensão 4 podemos ver uma relação de pesos positivos com produtos congelados e detergentes / papéis.</li>
+<li><p>Na dimensão 2 podemos ver uma co-relação de pesos-negativos com itens frescos, congelados e petiscos (delicatessen)</p>
+</li>
+<li><p>Na dimensão 3 podemos ver destacados os pesos positivos de petiscos (<em>delicatessen</em>) e congelados. Podemos também observar um peso negativo elevado para produtos frescos e um pouco em detergente e papéis, podemos concluir que produtos frescos e <em>delicatessen</em> são atributos negativamente correlacionados.</p>
+</li>
+<li><p>Na dimensão 4 podemos ver uma relação de pesos positivos com produtos congelados e detergentes / papéis. Também podemos observar pesos negativos em <em>delicatessen</em> e produtos frescos. Pode-se observar uma corelação negativa entre produtos congelados e <em>delicatessen</em>.</p>
+</li>
 </ul>
 
 </div>
